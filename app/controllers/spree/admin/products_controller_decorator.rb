@@ -1,4 +1,4 @@
-Spree::ProductsController.class_eval do
+Spree::Admin::ProductsController.class_eval do
   def new
     @distributors = Spree::Distributor.all
   end
