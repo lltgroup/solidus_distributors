@@ -1,5 +1,5 @@
 module Spree
-  class Distributor
+  class Distributor < ActiveRecord::Base
 
   end
 end
