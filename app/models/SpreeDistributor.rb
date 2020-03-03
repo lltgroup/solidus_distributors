@@ -1,0 +1,3 @@
+class SpreeDistributor < ApplicationRecord
+  
+end
