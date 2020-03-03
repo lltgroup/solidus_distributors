@@ -1,4 +1,4 @@
-class CreateSpreeDistributorTables < ActiveRecord::Migration[6.0]
+class CreateSpreeDistributorsTables < ActiveRecord::Migration[6.0]
   def change
     create_table :spree_distributors do |t|
       t.string     :name, null: false
