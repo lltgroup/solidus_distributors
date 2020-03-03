@@ -10,6 +10,12 @@ module SolidusDistributors
 
     engine_name 'solidus_distributors'
 
+    initializer "solidus_distributors", before: :load_config_initializers do |app|
+      config.paths["db/migrate"].expanded.each do |expanded_path|
+        Rails.application.config.paths["db/migrate"] << expanded_path
+      end
+    end
+
     # use rspec for tests
     config.generators do |g|
       g.test_framework :rspec
