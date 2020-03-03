@@ -1,3 +1,3 @@
-class SpreeDistributor < ApplicationRecord
-  
+class SpreeDistributor < ActiveRecord::Base
+
 end
